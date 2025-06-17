@@ -5,12 +5,12 @@ import numpy as np
 import joblib
 
 # Load artifacts
-model = joblib.load('bank_marketing.joblib')
+model = joblib.load('xgb_bank_marketing_model.joblib')
 model_columns = joblib.load('model_columns.joblib')
 robust_scaler = joblib.load('robust_scaler.joblib')
-minmax_scaler = joblib.load('minmax_scaler.joblib')
+minmax_scaler = joblib.load('standard_scaler.joblib')
 robust_cols = joblib.load('robust_columns.joblib')
-minmax_cols = joblib.load('minmax_columns.joblib')
+minmax_cols = joblib.load('standard_columns.joblib')
 
 # Streamlit app
 st.title("📊 Term Deposit Subscription Predictor")
